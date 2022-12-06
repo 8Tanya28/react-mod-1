@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-mod-1/static/css/main.e6c13ad2.css",
+    "main.js": "/react-mod-1/static/js/main.f2262125.js",
+    "index.html": "/react-mod-1/index.html",
+    "main.e6c13ad2.css.map": "/react-mod-1/static/css/main.e6c13ad2.css.map",
+    "main.f2262125.js.map": "/react-mod-1/static/js/main.f2262125.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.f2262125.js"
+  ]
+}

@@ -9,7 +9,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     <>
       <div className={s.profile}>
         <div className={s.description}>
-          <img src={avatar} alt={username} width="200" class={s.avatar} />
+          <img src={avatar} alt={username} width="200" className={s.avatar} />
           <p className={s.name}> {username} </p>
           <p className={s.tag}>{tag}</p>
           <p className={s.location}>{location}</p>

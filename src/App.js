@@ -6,7 +6,10 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 import profileUsers from "./db/user.json";
 import data from "./db/data.json";
-console.log(data);
+import friends from "./db/friends.json";
+import transactions from "./db/transactions.json";
+
+console.log(friends);
 
 const { username, tag, location, avatar, stats } = profileUsers;
 
@@ -22,8 +25,8 @@ function App() {
         stats={stats}
       />
       <Statistics title="statistics" stats={data} />
-      <FriendList />
-      <TransactionHistory />
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import TransactionItems from "./TransactionItem";
+import s from "./TransactionHistory.module.css";
+import TransactionItem from "./TransactionItem";
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
+    <table className={s.transactionHistory}>
+      <thead className={s.head}>
         <tr>
           <th>Type</th>
           <th>Amount</th>
@@ -13,15 +14,13 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
 
-      <tbody>
-        <tr>
-          <TransactionItems items={items} />
-        </tr>
+      <tbody className={s.item}>
+        <TransactionItem items={items} />
       </tbody>
     </table>
   );
 };
-TransactionItems.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

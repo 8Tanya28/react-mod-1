@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <ul className={s.friendList}>
       <FriendListItem friends={friends} />
     </ul>
   );

@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
@@ -9,7 +10,7 @@ import data from "./db/data.json";
 import friends from "./db/friends.json";
 import transactions from "./db/transactions.json";
 
-console.log(friends);
+// console.log(friends);
 
 const { username, tag, location, avatar, stats } = profileUsers;
 

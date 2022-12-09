@@ -9,22 +9,22 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     <>
       <div className={s.profile}>
         <div className={s.description}>
-          <img src={avatar} alt={username} width="200" className={s.avatar} />
+          <img src={avatar} alt={username} width="150" className={s.avatar} />
           <p className={s.name}> {username} </p>
           <p className={s.tag}>{tag}</p>
           <p className={s.location}>{location}</p>
         </div>
 
         <ul className={s.stats}>
-          <li>
+          <li className={s.box}>
             <span className={s.label}>Followers </span>
             <span className={s.quantity}> {followers} </span>
           </li>
-          <li>
+          <li className={s.box}>
             <span className={s.label}>Views </span>
             <span className={s.quantity}> {views} </span>
           </li>
-          <li>
+          <li className={s.box}>
             <span className={s.label}>Likes </span>
             <span className={s.quantity}> {likes} </span>
           </li>

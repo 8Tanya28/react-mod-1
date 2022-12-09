@@ -1,0 +1,25 @@
+.transactionHistory {
+    width: 300px;
+    text-align: center;
+    display: inline-table;
+    border: 1px solid darkcyan;
+  }
+  
+  .head {
+    background-color: rgb(21, 102, 108);
+    border: 1px solid darkcyan;
+    color: fff
+  }
+
+  s.item {
+    border: black;
+  }
+
+  td {
+    border: 1px solid darkcyan;    
+  }
+  .transactionHistory {
+    border: 1px solid darkcyan;
+  }
+
+  
